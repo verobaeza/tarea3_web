@@ -7,7 +7,7 @@ const suma = 'llegué a la suma!';
 // endpoint 
 router.get("suma", "/:param1/:param2", async (ctx) => {
     ctx.body = {
-        "status": 'Success',
+        "status": 200,
         "result": Number(ctx.params.param1) + Number(ctx.params.param2)
     }
 })
