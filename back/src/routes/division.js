@@ -8,8 +8,8 @@ router.post("division", "/", async (ctx) => {
     let param2 = ctx.request.body.param2;
     if (param2 === '0') {
         ctx.body = {
-            "status": "Error",
-            "result": "Syntax Error"
+            "status": 200,
+            "result": "Math Error"
         }
     } else {
         ctx.body = {
